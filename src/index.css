@@ -1,0 +1,95 @@
+body{
+  margin: 0;
+  background-color: #0B2434;
+  padding: 20px;
+  font-family: 'Karla', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App{
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width:60vw;
+  height: 70vh;
+  padding: 1rem;
+}
+
+.title {
+  font-size: 2.5rem;
+  /* background-color: aliceblue; */
+  color: #fff;
+  margin-top: 4rem;
+}
+
+.status {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  color: white;
+}
+
+.square{
+  width: 120px;
+  height: 120px;
+  border: none;
+  margin:0;
+  background-color: #0B2434;
+}
+.square-num {
+  color: white;
+  font-size: 4rem;
+  margin: 0;
+}
+.board{
+  display: grid;
+  grid-template: auto auto auto/ repeat(3, 1fr);
+  gap: 10px;
+  background-color: aliceblue;
+  /* margin-bottom: 40px;  */
+}
+/* .strike{
+  color: rgba(255, 255, 255, 0);
+  margin-bottom: 20px;
+
+  position: realtive; 
+  z-index: 1; 
+  width:0px;
+  height: 10px;
+  animation-name: example;
+  animation-duration: 0.0001s;
+  
+} */
+
+.reset {
+  margin-top: 3rem;
+  height: 50px;
+  width: 150px;
+  border: none;
+  border-radius: 2px;
+  background-color: #a69af0;
+  color: black;
+  font-size: 1.5rem;
+  font-family: 'Karla', sans-serif;
+  cursor: pointer;
+}
+
+.reset:focus {
+  outline: none;
+}
+
+.reset:hover{
+  background-color: #eb1818;
+  color: #fff;
+}
+@keyframes example{
+  0% {color:rgba(255, 255, 255, 0); width: 0px;}
+  
+  100% {color:#fff; width: 380px;}
+}
